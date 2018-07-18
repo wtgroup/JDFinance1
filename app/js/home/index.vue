@@ -1,18 +1,25 @@
 <template lang="html">
     <div :class="$style.home">
-        <h1>Home</h1>
+        Home
+        <!--<headerer/>-->
     </div>
 </template>
 
 <script>
-export default {
-}
+    import headerer from "../public/header.vue";
+
+    export default {
+        components: {
+            headerer,       //和html header区分开
+        }
+    }
 </script>
 
 <style lang="scss" module>
-  @import '../../css/reset.scss';
-  .home{
-    color: red;
-    font-size: 80px;
-  }
+    @import '../../css/reset.scss';
+
+    .home {
+        color: red;
+        font-size: 80px;
+    }
 </style>
