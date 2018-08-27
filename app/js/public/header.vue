@@ -1,7 +1,7 @@
-<template lang="html">
+<template>
     <div :class="$style.header">
         <span :class="$style.left"><em>注册</em>&nbsp;|&nbsp;<em>登录</em></span>
-        <btn :class="$style.btn-download">App下载</btn>
+        <btn :class="$style.btnDownload">App下载</btn>
     </div>
 </template>
 
@@ -36,7 +36,7 @@
             line-height: 30px;
             margin: 17px 0 0 18px;
         }
-        .btn-download{
+        .btnDownload{
             float: right;
             font-size: 24px;
             border-width:0;

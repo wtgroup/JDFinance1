@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section :class="[panelClass,cname]">
       <h4>-{{title}}-</h4>
       <!--<div>{{content}}</div>-->

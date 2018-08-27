@@ -1,5 +1,6 @@
-<template lang="html">
-  <div :class="[btnClass,cname]">
+<template>
+  <!--<div :class="[btnClass,cname]">-->
+  <div :class="$style.btn">
   <!--input html here-->
   <slot/>
   </div>
@@ -23,7 +24,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
   /*css here*/
   @import "../../css/element.scss";
   .btn{

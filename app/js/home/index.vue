@@ -1,7 +1,6 @@
-<template lang="html">
+<template>
     <div :class="$style.home">
-        Home
-        <!--<headerer/>-->
+        <headerer/>
     </div>
 </template>
 

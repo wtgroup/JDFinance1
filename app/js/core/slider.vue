@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section class="swiper">
     <swiper :options="options" :not-next-tick="options.notNextTick"> <!--options插件带有这个可配项-->
     <swiper-slide v-for="item in items" :key="item.href">
