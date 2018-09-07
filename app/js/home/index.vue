@@ -1,15 +1,21 @@
 <template>
     <div :class="$style.home">
-        <headerer/>
+        <Heador/>
+        <Hslider/>
+        <Novice/>
     </div>
 </template>
 
 <script>
-    import headerer from "../public/header.vue";
+    import Heador from "../public/header.vue";
+    import Hslider from "./hslider.vue";
+    import Novice from "./novice.vue";
 
     export default {
         components: {
-            headerer,       //和html header区分开
+            Heador,       //和html header区分开
+            Hslider,
+            Novice,
         }
     }
 </script>
@@ -18,7 +24,8 @@
     @import '../../css/reset.scss';
 
     .home {
-        color: red;
+        //color: red;
         font-size: 80px;
     }
 </style>
+0-0-78

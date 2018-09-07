@@ -1,3 +1,5 @@
+<!--
+使用时只需要详细构造内容的dom即可, 标题通过 title 属性传入-->
 <template>
   <section :class="[panelClass,cname]">
       <h4>-{{title}}-</h4>
