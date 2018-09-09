@@ -18,7 +18,9 @@ center, u, b, i {
     vertical-align: baseline
 }
 body {
-    line-height: 1
+    line-height: 1;
+    /*todo 暂时放这里*/
+    background: #f5f5f5;
 }
 :focus {
     outline: 0

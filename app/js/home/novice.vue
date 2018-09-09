@@ -12,13 +12,13 @@
                     <li>
                         <img src="https://goss.veer.com/creative/vcg/veer/800water/veer-317549033.jpg"
                              alt="Sry, 图片加载失败">
-                        <h4>领128元新手礼包</h4>
-                        <p>立即开通</p>
+                        <h4 :class="$style.red">领128元新手礼包</h4>
+                        <p :class="$style.gray">立即开通</p>
                     </li>
                     <li>
                         <img src="https://goss.veer.com/creative/vcg/veer/800water/veer-145074047.jpg" alt="">
-                        <h4>打白条<span class="red">享免息</span></h4>
-                        <p>立即开通享豪礼</p>
+                        <h4 :class="$style.red">打白条<span class="red">享免息</span></h4>
+                        <p :class="$style.gray">立即开通享豪礼</p>
                     </li>
                 </ul>
             </div>
@@ -51,6 +51,7 @@
                  -webkit-box-sizing: border-box;    //border-box: padding也算在宽度内
                  -moz-box-sizing: border-box;
                  box-sizing: border-box;
+                 border-right: 1px solid #ddd;
                  &:first-child{
                      padding: 32px 20px;
                      text-align: center;
@@ -69,6 +70,37 @@
                  }
                  .gray{
                      color: #999;
+                     font-size: 20px;
+                 }
+                 p {
+                     margin-top: 6px;
+                     font-size: 24px;
+                 }
+                 ul{
+                     width: 100%;
+                     li{
+                         height: 144px;
+                         width: 100%;
+                         padding: 32px 28px;
+                         /*加了padding, 将宽度撑开了, 需要设置为 border-box*/
+                         box-sizing: border-box;
+                         &:first-child{
+                             border-bottom: 1px solid #ddd;
+                         }
+                         h4{
+                             /*不折行, 超出...*/
+                             white-space: nowrap;
+                             text-overflow:ellipsis;
+                             overflow: hidden;
+
+                             text-align: left;
+                         }
+                         img{
+                             width: 80px;
+                             height: 80px;
+                             float: right;
+                         }
+                     }
                  }
              }
          }
