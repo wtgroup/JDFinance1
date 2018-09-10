@@ -3,6 +3,9 @@
         <Heador/>
         <Hslider/>
         <Novice/>
+        <Borrow/>
+        <Money/>
+        <Product/>
     </div>
 </template>
 
@@ -10,12 +13,18 @@
     import Heador from "../public/header.vue";
     import Hslider from "./hslider.vue";
     import Novice from "./novice.vue";
+    import Borrow from "./borrow.vue";
+    import Money from "./money.vue";
+    import Product from "./product.vue";
 
     export default {
         components: {
             Heador,       //和html header区分开
             Hslider,
             Novice,
+            Borrow,
+            Money,
+            Product,
         }
     }
 </script>
@@ -28,4 +37,3 @@
         font-size: 80px;
     }
 </style>
-0-0-78

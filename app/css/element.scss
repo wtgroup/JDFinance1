@@ -19,7 +19,7 @@
 }
 
 @mixin panel($bgcolor:#fff,$padding:0,$margin:20px 0,$height:112px,
-$txt_padding:0 32px,$txt_color:#333,$font_size:32px){
+$txt_padding:0 32px,$txt_color:#333,$font_size:40px){   //font_size:32px
   background: $bgcolor;
   padding:$padding;
   margin: $margin;
