@@ -3,6 +3,7 @@
 <template>
     <Panel title="新品推荐" :class="$style.panel">
         <section :class="$style.content">
+            <div class="arrow">更多好货>>></div>
             <Slider :options="options" :items="items" cname="product-slider"/>
         </section>
     </Panel>
@@ -60,7 +61,6 @@
             padding: 0 24px;
             .swiper-slide {
                 a {
-                    background: red;
                     display: inline-block;
                     width: 100%;
                     img {
@@ -83,6 +83,14 @@
         @include panel;
         .content {
             padding-bottom: 40px;
+            position: relative;
+            &>div {
+                position: absolute;
+                font-size: 28px;
+                color: #999;
+                right: 30px;
+                top: -70px;
+            }
         }
     }
 </style>
