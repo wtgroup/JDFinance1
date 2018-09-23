@@ -8,7 +8,7 @@
                 </router-link>
             </li>
             <li>
-                <router-link :to="{name:'home'}">
+                <router-link :to="{name:'money'}">
                     <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537631826194&di=2b41ff685742c4f3403b17b547af12b4&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01519b560de2796ac7251df8143b2d.jpg%401280w_1l_2o_100sh.jpg" alt="">
                     <p>理财</p>
                 </router-link>
